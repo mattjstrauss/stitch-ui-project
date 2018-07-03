@@ -4,7 +4,7 @@
 ============================================================== */
 
 html {
-	font: normal 16px / 1.65 $sansSerif;
+	font: normal 14px / 1.65 $sansSerif;
 }
 body {
   word-wrap: break-word;
@@ -14,7 +14,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: $black;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -47,17 +47,18 @@ h4 {
   margin-bottom: 1.21212rem;
 }
 h5 {
-  font-size: 1.44em;
+  font-size: 1.275em;
   margin-bottom: 0.80808rem;
 }
 h6 {
-  font-size: 1.2em;
+  font-size: 1.115em;
   margin-bottom: 0.60606rem;
 }
 p {
 	line-height: 1.5;
     margin: 0 0 1em;
-    hyphens: auto; 
+    hyphens: auto;
+    color: $grayMedium;
 }
 a {
 	text-decoration: none;

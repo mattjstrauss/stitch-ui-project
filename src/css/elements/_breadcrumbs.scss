@@ -1,0 +1,44 @@
+/*==============================================================
+# Breadcrumbs
+==============================================================*/
+.breadcrumbs {
+	padding: 15px 0;
+	ol {
+		list-style: none;
+	}
+	li {
+		font-size: 0;
+		display: inline-block;
+		&:after {
+			content: ">";
+			display: inline-block;
+			font-size: 14px;
+			color: white;
+			margin: 0 0 0 2px;
+		}
+		a {
+			color: $white;
+			display: inline;
+			font-size: 14px;
+			padding: 5px 0;
+			width: calc(100%);
+			background-repeat: no-repeat;
+			background-size: 0% 100%;
+			transition: all .4s $cbTrans;
+			background-image: linear-gradient(transparent calc(100% - 1px), $white 1px);
+			&:hover {
+				background-size: 100% 100%;
+			}
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+			a {
+				cursor: default;
+				background-image: none;
+				color: $yellow;
+			}
+		}
+	}
+}

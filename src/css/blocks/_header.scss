@@ -1,3 +1,16 @@
 /*==============================================================
 # Header
 ==============================================================*/
+.site-header {
+	background: $black;
+}
+.overview-header {
+	span {
+		&[itemprop="name"] {
+			font-weight: bold;
+		}
+		&[itemprop="value"] {
+			font-weight: normal;
+		}
+	}
+}

@@ -24,52 +24,80 @@
 
         </svg>
 
-        <style>
-            .header {
-                display: table;
-                height: 100vh;
-                width: 100%;
-                text-align: center;
-            }
-            .header i {
-                display: table-cell;
-                height: 100%;
-                width: 100%;
-                vertical-align: middle;
-            }
-        </style>
+        <div id="main"><!-- BEGIN .main -->
 
-        <div class="main"><!-- BEGIN .main -->
+            <header class="header site-header"><!-- BEGIN .header -->
 
-            <div class="header"><!-- BEGIN .header -->
+                <div class="container">
                             
-                <i class="logo brand-logo">
-                    <svg>
-                        <use xlink:href="#logo-bull-interactive" />
-                    </svg>  
-                </i>
-            
-            </div><!-- END .header -->
+                    <nav class="navigation breadcrumbs"><!-- BEGIN .nav -->
 
-            <div class="nav"><!-- BEGIN .nav -->
-                
-            </div><!-- END .nav -->
-
-            <div class="section"><!-- BEGIN .section -->
-
-            </div><!-- END .section -->
-
-            <div class="article"><!-- BEGIN .article -->
+                        <ol role="menu" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="#" itemprop="url">
+                                    <span itemprop="title">Loading reports</span>
+                                </a>
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="#" itemprop="url" tabindex="-1">
+                                    <span itemprop="title">engagements</span>
+                                </a>
+                            </li>
+                        </ol>
                     
-            </div><!-- END .article -->
+                    </nav><!-- END .nav -->
 
-            <div class="aside"><!-- BEGIN .aside -->
-                
-            </div><!-- END .aside -->
+                </div>
+            
+            </header><!-- END .header -->
 
-            <div class="footer"><!-- BEGIN .footer -->
+            <section class="section"><!-- BEGIN .section -->
+
+                <header class="header section-header overview-header"><!-- BEGIN .header -->
+
+                    <div class="container">
+
+                        <div class="overview-status" itemscope itemtype="http://schema.org/Product">
+
+                            <h5>
+                                <span itemprop="name">Loading Reports By Table: </span>
+                                <span itemprop="value">engagements</span>
+                            </h5>
+                            <p itemprop="description">Each time Stitch loaded data from the campaigns table to your destination, by day.</p>
+
+                        </div>
+
+                    </div>
+
+                </header>
+
+            </section><!-- END .section -->
+
+            <div class="section">
                 
-            </div><!-- END .footer -->
+                <form action="#">
+
+                    <div class="form-element select-element">
+
+                        <label class="srt-only" for="select">Select field:</label>
+
+                        <div class="form-input select-input">
+
+                            <select name="select" id="select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+
+                            <i class="icon icon-arrow">
+                                <svg><use xlink:href="/img/spritemap.svg#icon-arrow-down"></use><svg>
+                            </i>
+
+                    </form>
+
+            </div>
             
         </div><!-- END .main -->
 
