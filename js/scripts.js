@@ -18,5 +18,7 @@ $(document).ready(function(){
 	//   document.body.insertBefore(div, document.body.childNodes[0]);
 	// });
 
+	customSelects();
+
 })
 //# sourceMappingURL=maps/scripts.js.map

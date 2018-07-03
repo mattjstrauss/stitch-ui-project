@@ -8,8 +8,8 @@
 $white:							#fff !default;
 $black:							#1f2124;
 $gray:							#f4f4f4;
-$grayDark:              		lighten($gray, 15%);
-$grayLight:						darken($gray, 15%);
+$grayDark:              		darken($gray, 65%);
+$grayLight:						lighten($gray, 15%);
 $grayMedium:					#6a6a6a;
 $blue:							#6aaff5;
 $yellow:						#ffcc01;

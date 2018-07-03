@@ -51,51 +51,51 @@
             
             </header><!-- END .header -->
 
-            <section class="section"><!-- BEGIN .section -->
+            <section class="section overview-section"><!-- BEGIN .section -->
 
-                <header class="header section-header overview-header"><!-- BEGIN .header -->
+                 <div class="container">
 
-                    <div class="container">
+                    <div class="overview-status" itemscope itemtype="http://schema.org/Product">
 
-                        <div class="overview-status" itemscope itemtype="http://schema.org/Product">
-
-                            <h5>
-                                <span itemprop="name">Loading Reports By Table: </span>
-                                <span itemprop="value">engagements</span>
-                            </h5>
-                            <p itemprop="description">Each time Stitch loaded data from the campaigns table to your destination, by day.</p>
-
-                        </div>
+                        <h5>
+                            <span itemprop="name">Loading Reports By Table: </span>
+                            <span itemprop="value">engagements</span>
+                        </h5>
+                        <p itemprop="description">Each time Stitch loaded data from the campaigns table to your destination, by day.</p>
 
                     </div>
 
-                </header>
+                </div>
 
             </section><!-- END .section -->
 
-            <div class="section">
+            <div class="section filter-section">
+
+                <div class="container">
                 
-                <form action="#">
+                    <form action="#" id="filter-form">
 
-                    <div class="form-element select-element">
+                        <div class="form-element select-element">
 
-                        <label class="srt-only" for="select">Select field:</label>
+                            <label for="select" class="srt-only">Select field:</label>
 
-                        <div class="form-input select-input">
+                            <div class="form-input select-input custom-select">
 
-                            <select name="select" id="select">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                            </select>
+                                <select name="select" id="select" tabindex="0" class="srt-only">
+                                  <option value="july-17-2018">July 17, 2018</option>
+                                  <option value="july-18-2018">July 18, 2018</option>
+                                  <option value="july-19-2018">July 19, 2018</option>
+                                  <option value="july-20-2018">July 20, 2018</option>
+                                  <option value="july-21-2018">July 21, 2018</option>
+                                </select>
 
-                            <i class="icon icon-arrow">
-                                <svg><use xlink:href="/img/spritemap.svg#icon-arrow-down"></use><svg>
-                            </i>
+                                <i class="icon ui-icon triangle-down-icon"></i>
+
+                            </div>
 
                     </form>
+
+                </div>
 
             </div>
             
