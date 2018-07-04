@@ -1,4 +1,10 @@
-# A basic HTML starter project with Sass and Gulp.js
+# Wireframe prototype based off my basic HTML starter project with Sass and Gulp.js
+## Notes & Highlights
+1. Built with a BEM philosophy to scale with helper classes used as seen fit for sizing, spacing, layout and overall appearance
+2. SVG's used to display data as a level that can scale
+3. Semantic markup that is accessible with tabbed navigation and follows guidelines created by [Schema.org](https://schema.org/)
+4. Progessively enhanceed elements utilizing HTML5 data attribute such a the select field with visually comparable and usable fallback and responsive table layouts
+5. Filterable table rows (still in progress)
 
 ## Project Languages
 1. HTML5
@@ -6,10 +12,10 @@
 3. jQuery
 
 ## Project Utilities (Optional)
-1. [Bootstrap Framework (Grid Only)](https://getbootstrap.com/docs/4.0/layout/grid/): A free and open-source front-end web framework for building responsive, mobile-first websites and web applications.
+1. [Bootstrap Framework (Grid Only)](https://getbootstrap.com/docs/4.0/layout/grid/): A free and open-source front-end web framework for building responsive, mobile-first websites and web applications. (Utilized container setup but no grid used to date)
 2. [Eric Meyers reset](https://meyerweb.com/eric/tools/css/reset/) and [Normalize.css](https://necolas.github.io/normalize.css/): Makes browsers render all elements more consistently and in line with modern standards.
-3. [Modernizer](https://modernizr.com/): A collection of superfast tests – or “detects” as we like to call them – which run as your web page loads, then you can use the results to tailor the experience to the user.
-4. [TweenMax by Greensock](https://greensock.com/tweenmax): Built for convenience, TweenMax provides a single JavaScript file that contains everything you will commonly need for animating DOM elements.
+3. [Modernizer](https://modernizr.com/): A collection of superfast tests – or “detects” as we like to call them – which run as your web page loads, then you can use the results to tailor the experience to the user. (Fallback to be done in debugging)
+4. [TweenMax by Greensock](https://greensock.com/tweenmax): Built for convenience, TweenMax provides a single JavaScript file that contains everything you will commonly need for animating DOM elements. (Omitted)
 5. [SVG for Everybody](https://jonathantneal.github.io/svg4everybody/): SVG for Everybody adds external spritemaps support to otherwise SVG-capable browsers.
 
 ### Working with [Gulp.js](https://gulpjs.com/)
