@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+# Spacing
+--------------------------------------------------------------*/
+
+.padding {
+	&[class~="xl-p-left"] {
+		padding-left: 30px;
+		@include breakFirst('medium') {
+			padding-left: 40px;
+		}
+		@include breakFirst('large') {
+			padding-left: 50px;
+		}
+	}
+	&[class~="xl-p-right"] {
+		padding-right: 30px;
+		@include breakFirst('medium') {
+			padding-right: 40px;
+		}
+		@include breakFirst('large') {
+			padding-right: 50px;
+		}
+	}
+	&[class~="xl-p-top"] {
+		padding-top: 30px;
+		@include breakFirst('medium') {
+			padding-top: 40px;
+		}
+		@include breakFirst('large') {
+			padding-top: 50px;
+		}
+	}
+	&[class~="xl-p-bottom"] {
+		padding-bottom: 30px;
+		@include breakFirst('medium') {
+			padding-bottom: 40px;
+		}
+		@include breakFirst('large') {
+			padding-bottom: 50px;
+		}
+	}
+	&[class~="lg-p-left"] {
+		padding-left: 25px;
+		@include breakFirst('medium') {
+			padding-left: 30px;
+		}
+		@include breakFirst('large') {
+			padding-left: 35px;
+		}
+	}
+	&[class~="lg-p-right"] {
+		padding-right: 25px;
+		@include breakFirst('medium') {
+			padding-right: 30px;
+		}
+		@include breakFirst('large') {
+			padding-right: 35px;
+		}
+	}
+	&[class~="lg-p-top"] {
+		padding-top: 25px;
+		@include breakFirst('medium') {
+			padding-top: 30px;
+		}
+		@include breakFirst('large') {
+			padding-top: 35px;
+		}
+	}
+	&[class~="lg-p-bottom"] {
+		padding-bottom: 25px;
+		@include breakFirst('medium') {
+			padding-bottom: 30px;
+		}
+		@include breakFirst('large') {
+			padding-bottom: 35px;
+		}
+	}
+	&[class~="md-p-left"] {
+		padding-left: 15px;
+		@include breakFirst('medium') {
+			padding-left: 25px;
+		}
+		@include breakFirst('large') {
+			padding-left: 30px;
+		}
+	}
+	&[class~="md-p-right"] {
+		padding-right: 15px;
+		@include breakFirst('medium') {
+			padding-right: 25px;
+		}
+		@include breakFirst('large') {
+			padding-right: 30px;
+		}
+	}
+	&[class~="md-p-top"] {
+		padding-top: 15px;
+		@include breakFirst('medium') {
+			padding-top: 25px;
+		}
+		@include breakFirst('large') {
+			padding-top: 30px;
+		}
+	}
+	&[class~="md-p-bottom"] {
+		padding-bottom: 15px;
+		@include breakFirst('medium') {
+			padding-bottom: 25px;
+		}
+		@include breakFirst('large') {
+			padding-bottom: 30px;
+		}
+	}
+	&[class~="sm-p-left"] {
+		padding-left: 10px;
+		@include breakFirst('medium') {
+			padding-left: 15px;
+		}
+	}
+	&[class~="sm-p-right"] {
+		padding-right: 10px;
+		@include breakFirst('medium') {
+			padding-right: 15px;
+		}
+	}
+	&[class~="sm-p-top"] {
+		padding-top: 10px;
+		@include breakFirst('medium') {
+			padding-top: 15px;
+		}
+	}
+	&[class~="sm-p-bottom"] {
+		padding-bottom: 10px;
+		@include breakFirst('medium') {
+			padding-bottom: 15px;
+		}
+	}
+}

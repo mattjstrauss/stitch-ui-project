@@ -7,6 +7,22 @@ $(document).ready(function(){
 	$('body').removeClass('loading');
 
 	// ==============================================================*/
+	// SVG 4 Everybody
+	// ==============================================================*/
+	svg4everybody();
+
+	// ==============================================================*/
+	// Duplicated select field content to make a more visually 
+	// adjustable type
+	// ==============================================================*/
+	customSelects();
+
+	// ==============================================================*/
+	// Sort table columns (still in the works)
+	// ==============================================================*/
+	columnSort();
+
+	// ==============================================================*/
 	// Create node and insert SVG file after the body
 	// ==============================================================*/
 
@@ -17,8 +33,6 @@ $(document).ready(function(){
 	//   div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
 	//   document.body.insertBefore(div, document.body.childNodes[0]);
 	// });
-
-	customSelects();
 
 })
 //# sourceMappingURL=maps/scripts.js.map

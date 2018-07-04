@@ -11,6 +11,8 @@
 	border-color: $grayMedium;
 	@include breakFirst(medium) {
 		border-top: none;
+		box-sizing: border-box;
+		border-collapse: collapse;
 	}
 }
 .table-head,
@@ -23,9 +25,7 @@
 	background: $gray;
 	border-top: 1px solid;
 	border-color: $grayMedium;
-	@include breakFirst(medium) {
-		display: table-header-group;
-	}
+	box-sizing: border-box;
 	@include break(small) {
 		border: none;
 		clip: rect(0 0 0 0);
@@ -37,25 +37,72 @@
 		width: 1px;
 	}
 }
-.table-row {
+.table-head,
+.table-body {
+    @include breakFirst(medium) {
+		display: table-header-group;
+    	vertical-align: middle;
+	}
+}
+.table-row,
+.table-head-row {
 	border-bottom: 1px solid;
 	border-color: $grayMedium;
 	@include breakFirst(medium) {
 		display: table-row;
+	}
+	.sort-time {
+		cursor: pointer;
+		span {
+			position: relative;
+			padding-right: 20px;
+			&:after {
+				display: inline-block;
+				top: 50%;
+				right: 0;
+				position: absolute;
+				cursor: pointer;
+				transition: all .4s $cbTrans;
+				content: "";
+				transform-origin: center;
+				border-top: 5px solid $black;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+			}
+		}
+		&.asc {
+			span {
+				&:after {
+					transform: translateY(-50%) rotate(0deg);
+				}
+			}
+		}
+		&.desc {
+			span {
+				&:after {
+					transform: translateY(-50%) rotate(180deg);
+				}
+			}
+		}
 	}
 }
 .table-cell {
 	display: block;
 	padding: 1em;
 	text-align: right;
-	font-size: .8em;
+	font-size: .95em;
 	border-bottom: 1px solid;
 	border-color: $gray;
 	@include breakFirst(medium) {
 		display: table-cell;
 		text-align: left;
-		padding: 1.5em;
+		padding: 1em 1.25em;
 		border: none;
+	}
+	&:first-child {
+		@include breakFirst(large) {
+			width: 180px;
+		}
 	}
 	&:last-child {
 		border-bottom: none;

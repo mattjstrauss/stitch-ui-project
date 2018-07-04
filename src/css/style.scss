@@ -15,6 +15,7 @@
 @import
     'elements/_breadcrumbs',
     'elements/_inputs',
+    'elements/_links',
     'elements/_buttons',
     'elements/_lists';
 
@@ -28,9 +29,12 @@
 // Similar to blocks but built to use as many times as needed per view
 @import
     'components/_forms',
-    'components/_tables';
+    'components/_tables',
+    'components/_timeline';
 
 // 6. Modifiers
 @import
     'modifiers/_color-schemes',
+    'modifiers/_spacing',
+    'modifiers/_sizing',
     'modifiers/_alignment';

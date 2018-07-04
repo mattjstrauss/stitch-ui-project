@@ -1,3 +1,54 @@
 /*==============================================================
 # Footer
 ==============================================================*/
+
+.site-footer {
+	border-top: 1px solid $grayMedium;
+	font-size: .75em;
+	text-align: center;
+	@include breakFirst('medium') {
+		text-align: left;
+	}
+	div[itemprop="organization"] {
+		display: block;
+		@include breakFirst('medium') {
+			display: inline-block;
+		}
+		> * {
+			display: inline-block;
+			&:after {
+				content: "|";
+				margin: 0 5px;
+			}
+			&:first-child{
+				&:after {
+					display: none;
+				}
+			}
+			&:last-child{
+				&:after {
+					display: none;
+					@include breakFirst('medium') {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+	nav {
+		display: block;
+		@include breakFirst('medium') {
+			display: inline-block;
+		}
+		ul {
+			list-style: none;
+			li {
+				display: inline-block;
+			}
+		}
+		a {
+			text-decoration: underline;
+			padding: 0 5px;
+		}
+	}
+}

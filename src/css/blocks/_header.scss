@@ -1,10 +1,8 @@
 /*==============================================================
 # Header
 ==============================================================*/
-.site-header {
-	background: $black;
-}
-.overview-header {
+
+div[role="heading"] {
 	span {
 		&[itemprop="name"] {
 			font-weight: bold;

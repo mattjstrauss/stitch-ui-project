@@ -1,10 +1,38 @@
+function columnSort() {
+
+	$('.sort-time').on('click', function () {
+
+		if ( $(this).hasClass('asc') ) {
+
+			var $rows = $('.table-row'),
+				$tableBody = $('.table-body');
+
+	   		var orderedDesc = $rows.sort(function (a, b) {
+				return parseInt($(a).data('time')) > parseInt($(b).data('time'));
+	    	});
+
+	    	$tableBody.html(orderedDesc);
+
+	    } 
+
+	    // Still have to reverse toggle the rows
+	    setTimeout(function(){
+		 $('.sort-time').toggleClass('asc desc');
+		}, 100);
+	    
+	});
+
+};
 function customSelects() {
+	$(document).click(function(){
+	  $('.custom-select').removeClass('active-select');
+	});
 
 	$selectObject = $('.custom-select');
 	$selectObject.each(function(){
 		$currentSelectObject = $(this);
 		$currentSelectObject.on('click', function(e){
-			e.preventDefault();
+			e.stopPropagation();
 			$currentSelectObject.toggleClass('active-select');
 		});
 		$selectField = $(this).find('select');
@@ -18,6 +46,7 @@ function customSelects() {
 		$defaultSelection.addClass('selected');
 		$defaultValue = $defaultSelection.text();
 		$(this).attr('data-current-value', $defaultValue);
+		
 		$selectListOptions.on('click', function(e){
 			e.preventDefault();
 			$('.select-list li').removeClass('selected');
@@ -25,6 +54,7 @@ function customSelects() {
 			$selectObject.attr('data-current-value', $(this).text());
 			$selectField.val($(this).data('value'));
 		});
+
 		$selectField.on('change', function(){
 			console.log($selectField.val());
 			$selectList.find("[data-value='" + $selectField.val() + "']").trigger('click'); 
@@ -35,7 +65,12 @@ function customSelects() {
 		$selectListOptions.last().focusout(function() {
 			$currentSelectObject.removeClass('active-select');
 		});
+		$selectObject.focusout(function() {
+			$currentSelectObject.removeClass('active-select');
+		});
 	});
+
+	
 }
 /*! modernizr 3.3.1 (Custom Build) | MIT *
  * https://modernizr.com/download/?-flexbox-setclasses !*/

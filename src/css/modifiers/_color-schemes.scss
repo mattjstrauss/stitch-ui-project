@@ -8,3 +8,13 @@
   	color: lighten($grayDark, 45%);
   }
 }
+.white-text {
+	color: $white;
+}
+.black-background {
+	background: $black;
+	color: invert($black);
+	a {
+		color: invert($black);
+	}
+}

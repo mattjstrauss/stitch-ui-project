@@ -1,0 +1,21 @@
+/*==============================================================
+# Links
+==============================================================*/
+
+a {
+	color: $linkColor;
+	transition: all .4s $cbTrans;
+	&[href^="mailto"] {
+		color: $purple;
+		@include breakFirst('medium') {
+			&:hover {
+				color: darken($purple, 20%);
+			}
+		}
+	}
+	@include breakFirst('medium') {
+		&:hover {
+			color: darken($linkColor, 20%);
+		}
+	}
+}
