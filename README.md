@@ -1,4 +1,6 @@
-# Wireframe prototype based off my basic HTML starter project with Sass and Gulp.js
+# Stitch Wireframe Prototype 
+This is based off my basic HTML starter project with Sass and Gulp.js
+
 ## Notes & Highlights
 1. Built with a BEM philosophy to scale with helper classes used as seen fit for sizing, spacing, layout and overall appearance
 2. SVG's used to display data as a level that can scale
