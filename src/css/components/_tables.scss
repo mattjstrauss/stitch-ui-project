@@ -1,0 +1,71 @@
+/*==============================================================
+# Tables
+==============================================================*/
+
+.table {
+    display: table;
+    width: 100%;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+	border-color: $grayMedium;
+	@include breakFirst(medium) {
+		border-top: none;
+	}
+}
+.table-head,
+.table-row {
+	width: 100%;
+	display: block;
+}
+.table-head {
+	font-weight: bold;
+	background: $gray;
+	border-top: 1px solid;
+	border-color: $grayMedium;
+	@include breakFirst(medium) {
+		display: table-header-group;
+	}
+	@include break(small) {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+}
+.table-row {
+	border-bottom: 1px solid;
+	border-color: $grayMedium;
+	@include breakFirst(medium) {
+		display: table-row;
+	}
+}
+.table-cell {
+	display: block;
+	padding: 1em;
+	text-align: right;
+	font-size: .8em;
+	border-bottom: 1px solid;
+	border-color: $gray;
+	@include breakFirst(medium) {
+		display: table-cell;
+		text-align: left;
+		padding: 1.5em;
+		border: none;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+	&:before {
+		content: attr(data-label)":";
+		float: left;
+		font-weight: bold;
+		@include breakFirst(medium) {
+			display: none;
+		}
+	}
+}

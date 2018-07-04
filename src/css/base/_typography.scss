@@ -58,7 +58,8 @@ p {
 	line-height: 1.5;
     margin: 0 0 1em;
     hyphens: auto;
-    color: $grayMedium;
+    color: $grayDark;
+    -webkit-font-smoothing: antialiased;
 }
 a {
 	text-decoration: none;
